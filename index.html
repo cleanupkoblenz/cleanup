@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CleanUp – Reinigungsservice</title>
+  <title>CleanUp – Gebäudereinigung & Facility Service</title>
   <meta name="description" content="CleanUp – professionelle Gebäudereinigung, Privathaushaltsreinigung, Solaranlagenreinigung und Gartenpflege in Koblenz und Umgebung.">
   <style>
     :root {
@@ -12,20 +12,14 @@
       --text: #1f2937;
       --muted: #6b7280;
       --bg: #f7f9fc;
-      --white: #ffffff;
       --border: #e5e7eb;
       --shadow: 0 10px 30px rgba(11, 44, 102, 0.08);
       --radius: 18px;
       --max: 1140px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -35,14 +29,8 @@
       line-height: 1.6;
     }
 
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      text-decoration: none;
-    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; }
 
     .container {
       width: min(var(--max), calc(100% - 32px));
@@ -64,15 +52,6 @@
       justify-content: space-between;
       gap: 20px;
       min-height: 76px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      color: var(--navy);
-      font-weight: 700;
-      font-size: 20px;
     }
 
     .brand img {
@@ -102,16 +81,6 @@
       border-radius: 999px;
       font-weight: 700;
       transition: 0.2s ease;
-    }
-
-    .btn-primary {
-      background: var(--green);
-      color: white;
-      box-shadow: 0 8px 20px rgba(124, 194, 66, 0.28);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-1px);
     }
 
     .btn-secondary {
@@ -144,37 +113,10 @@
     }
 
     .hero p {
-      margin: 0 0 26px;
+      margin: 0;
       font-size: 18px;
       color: var(--muted);
       max-width: 640px;
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-bottom: 28px;
-    }
-
-    .hero-points {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-
-    .hero-points li {
-      background: white;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-      padding: 10px 14px;
-      border-radius: 999px;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--navy);
     }
 
     .hero-card {
@@ -300,10 +242,6 @@
       font-weight: 800;
     }
 
-    .contact-wrap {
-      display: block;
-    }
-
     .cta-box {
       background: linear-gradient(135deg, var(--navy), #153d86);
       color: white;
@@ -338,6 +276,25 @@
       text-decoration: underline;
     }
 
+    .legal-box {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 26px;
+      margin-bottom: 22px;
+    }
+
+    .legal-box h3 {
+      margin-top: 0;
+      color: var(--navy);
+    }
+
+    .legal-box p {
+      margin: 0 0 12px;
+      color: var(--muted);
+    }
+
     footer {
       padding: 28px 0 40px;
       color: var(--muted);
@@ -351,6 +308,16 @@
       justify-content: space-between;
       gap: 16px;
       flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--muted);
     }
 
     @media (max-width: 900px) {
@@ -390,6 +357,8 @@
         <a href="#leistungen">Leistungen</a>
         <a href="#warum">Warum wir</a>
         <a href="#kontakt">Kontakt</a>
+        <a href="#impressum">Impressum</a>
+        <a href="#datenschutz">Datenschutz</a>
       </nav>
     </div>
   </header>
@@ -404,18 +373,6 @@
             Immobilien und Privathaushalte in Koblenz und Umgebung – zuverlässig,
             gründlich und mit einem Blick fürs Detail.
           </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:cleanupkoblenz@gmail.com?subject=Anfrage%20%C3%BCber%20die%20Website&body=Hallo%20CleanUp%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20folgende%20Leistung%3A%0A%0AName%3A%0ATelefonnummer%3A%0AAdresse%2FEinsatzort%3A%0AWunschtermin%3A%0ANachricht%3A%0A">Jetzt anfragen</a>
-            <a class="btn btn-secondary" href="#leistungen">Leistungen ansehen</a>
-          </div>
-
-          <ul class="hero-points">
-            <li>Gründlich</li>
-            <li>Zuverlässig</li>
-            <li>Flexibel</li>
-            <li>Regional</li>
-          </ul>
         </div>
 
         <div class="hero-card">
@@ -441,37 +398,25 @@
           <article class="card">
             <div class="card-icon">🏢</div>
             <h3>Gebäudereinigung</h3>
-            <p>
-              Gründliche Reinigung von gewerblichen Flächen, Büros, Eingangsbereichen
-              und allgemeinen Immobilienbereichen.
-            </p>
+            <p>Gründliche Reinigung von gewerblichen Flächen, Büros, Eingangsbereichen und allgemeinen Immobilienbereichen.</p>
           </article>
 
           <article class="card">
             <div class="card-icon">🏠</div>
             <h3>Reinigung für Privathaushalte</h3>
-            <p>
-              Sauberkeit für Ihr Zuhause – zuverlässig, diskret und mit einem
-              hohen Anspruch an Ordnung und Pflege.
-            </p>
+            <p>Sauberkeit für Ihr Zuhause – zuverlässig, diskret und mit einem hohen Anspruch an Ordnung und Pflege.</p>
           </article>
 
           <article class="card">
             <div class="card-icon">☀️</div>
             <h3>Solaranlagenreinigung</h3>
-            <p>
-              Saubere Module für eine gepflegte Anlage und bessere Bedingungen
-              für eine konstante Leistungsfähigkeit.
-            </p>
+            <p>Saubere Module für eine gepflegte Anlage und bessere Bedingungen für eine konstante Leistungsfähigkeit.</p>
           </article>
 
           <article class="card">
             <div class="card-icon">🌿</div>
             <h3>Garten- & Außenanlagenpflege</h3>
-            <p>
-              Pflege von Außenbereichen, Grünflächen und dem Umfeld Ihrer
-              Immobilie für einen sauberen ersten Eindruck.
-            </p>
+            <p>Pflege von Außenbereichen, Grünflächen und dem Umfeld Ihrer Immobilie für einen sauberen ersten Eindruck.</p>
           </article>
         </div>
       </div>
@@ -481,7 +426,7 @@
       <div class="container">
         <div class="section-head">
           <div class="section-kicker">Warum CleanUp</div>
-          <h2>Seriös. Klar. Zuverlässig.</h2>
+          <h2>Gründlich. Klar. Zuverlässig.</h2>
           <p>
             Wir wollen nicht einfach nur reinigen – wir wollen, dass Ihre
             Immobilie, Ihr Zuhause oder Ihre Anlage gepflegt, ordentlich und
@@ -505,7 +450,7 @@
               <li>Persönlicher und direkter Kontakt</li>
               <li>Flexible Terminabstimmung</li>
               <li>Leistungen für Privat und Gewerbe</li>
-              <li>Sauberes und seriöses Auftreten</li>
+              <li>Sauberes und gepflegtes Auftreten</li>
             </ul>
           </div>
         </div>
@@ -513,7 +458,7 @@
     </section>
 
     <section class="section" id="kontakt">
-      <div class="container contact-wrap">
+      <div class="container">
         <div class="cta-box">
           <h3>Sauberkeit, auf die man sich verlassen kann.</h3>
           <p>
@@ -527,12 +472,57 @@
         </div>
       </div>
     </section>
+
+    <section class="section" id="impressum">
+      <div class="container">
+        <div class="legal-box">
+          <h2>Impressum</h2>
+          <p><strong>Angaben gemäß § 5 DDG</strong></p>
+          <p>
+            <strong>CleanUp Reinigungsservice</strong><br>
+            Kevin Löwen<br>
+            Potsdamer Straße 39<br>
+            56075 Koblenz
+          </p>
+          <p>
+            <strong>Kontakt</strong><br>
+            E-Mail: cleanupkoblenz@gmail.com
+          </p>
+          <p>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="datenschutz">
+      <div class="container">
+        <div class="legal-box">
+          <h2>Datenschutz</h2>
+          <p>
+            Beim Besuch dieser Website werden technisch notwendige Daten durch den Hosting-Anbieter verarbeitet.
+          </p>
+          <p>
+            Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir die von Ihnen übermittelten Daten ausschließlich zur Bearbeitung Ihrer Anfrage.
+          </p>
+          <p>
+            Verantwortlich für die Datenverarbeitung:<br>
+            CleanUp Koblenz, Inh. Kevin Löwen, Potsdamer Straße 39, 56075 Koblenz<br>
+            E-Mail: cleanupkoblenz@gmail.com
+          </p>
+          <p>
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
     <div class="container footer-inner">
-      <div>© CleanUp</div>
-      <div>Sichtbar sauber. Spürbar besser.</div>
+      <div>© 2026 CleanUp Reinigungsservice</div>
+      <div class="footer-links">
+        <a href="#impressum">Impressum</a>
+        <a href="#datenschutz">Datenschutz</a>
+      </div>
     </div>
   </footer>
 
